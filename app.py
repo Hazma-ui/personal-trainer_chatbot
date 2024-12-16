@@ -5,10 +5,11 @@ import os
 
 # Load environment variables
 load_dotenv()
-cohere_api_key = os.getenv("COHERE_API_KEY")
+COHERE_API_KEY = "7VnnFqfEDDwXWz2TBrop83ver1yJPrDu7bngPm4F"
+
 
 # Initialize Cohere client
-co = cohere.Client(cohere_api_key)
+co = cohere.Client(COHERE_API_KEY)
 
 # Initialize Streamlit Session State
 if "user_data" not in st.session_state:
